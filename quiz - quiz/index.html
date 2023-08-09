@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QUIZ</title>
+        <link rel="icon" href="imgs/book.png">
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+
+            body{
+                background-color: rgb(95, 126, 126);
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+
+            /*ESTILIZANDO O TÍTULO E A PARTE SUPERIOR*/
+            .banner{
+                background-color: rgb(10, 50, 85);
+                height: 20vh;
+                width: 100%;
+                font-size: 4vh;
+                flex-direction: row;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                display: flex;
+                color: white;
+            }
+
+            .placar{
+                margin-top: 3vh;
+                margin-bottom: 3vh;
+                text-align: right;
+                color: white;
+                margin-right: 10vw;
+            }
+
+            /*Parte final*/
+            #nota{
+                width: 60%;
+                height: 40vh;
+                margin: auto;
+                margin-top: 5vh;
+                font-size: 3vh;
+                background-color: rgb(95, 126, 126);
+                flex-direction: row;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+                display: none;
+            }
+
+
+            /*ESTILIZANDO A CAIXA CENTRAL DA PERGUNTA*/
+            .box{
+                width: 60%;
+                height: 60vh;
+                background-color: rgb(10, 50, 85);
+                color: white;
+                margin: auto;
+                padding: 2vh;
+                border-top: 4px solid black;
+                border-left: 4px solid black;
+            }
+
+            hr{
+                color: white;
+                width: 80%;
+                margin: auto;
+                margin-top: 3vh;
+
+            }
+
+            #question{
+                text-align: center;
+            }
+
+            #perg{
+                margin-top: 3vh;
+            }
+
+            /*ESTILIZANDO A CAIXA CENTRAL DA ALTERNATIVA*/
+            ul{
+                list-style: none;
+            }
+
+            button{
+                border: none;
+                background-color: rgb(95, 126, 126);
+                color: white;
+                font-size: 3vh;
+                width: 40vw;
+                height: 7vh;
+                margin-top: 3vh;
+            }
+
+            #alter{
+                flex-direction: row;
+                align-items: center;
+                text-align: center;
+                justify-content: center;
+            }
+
+            button:hover{
+                color: black;
+                border-bottom: 2px solid black;
+                border-right: 2px solid black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="banner">
+                <h1 class="titu">QUIZ</h1>
+            </div>
+
+            <div class="placar">
+                <h3 id="placar2">Player: 0</h3>
+            </div>
+        </header>
+
+        <main>
+            <div class="box">
+                <div id="question">
+                    <p><h2 id="perg">1- Qual a capital do Canadá?</h2></p>
+                </div>
+
+                <hr>
+
+                <div id="nota">
+                    <h2 id="pontfin">dfff</h2>
+                </div>
+
+                <div id="alter">
+                    <ul>
+                        <li><button id="n1" onclick="validar(1)">Ottawa</button></li>
+                        <li><button id="n2" onclick="validar(2)">Toronto</button></li>
+                        <li><button id="n3" onclick="validar(3)">Vancouver</button></li>
+                        <li><button id="n4" onclick="validar(4)">Victória</button></li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        
+
+        <script src="script.js" >
+            
+        </script>
+    </body>
+</html>
